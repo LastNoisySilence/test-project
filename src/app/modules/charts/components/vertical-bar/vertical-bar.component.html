@@ -1,0 +1,19 @@
+<div>
+    <div class="uk-card uk-card-default uk-card-small uk-card-body">
+        <ng-content for="h3"></ng-content>
+        <div class="chart-wrapper">
+          <ngx-charts-bar-vertical
+            *ngIf="data?.length"
+            [scheme]="colorScheme"
+            [results]="data"
+            [gradient]="gradient"
+            [xAxis]="showXAxis"
+            [yAxis]="showYAxis"
+            [legend]="showLegend"
+            [showXAxisLabel]="showXAxisLabel"
+            [showYAxisLabel]="showYAxisLabel"
+            [yAxisTickFormatting]="yAxisTickFormatting"> 
+          </ngx-charts-bar-vertical>
+        </div>
+    </div>
+</div>

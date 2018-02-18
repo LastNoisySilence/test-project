@@ -1,0 +1,18 @@
+<div>
+    <div class="uk-card uk-card-default uk-card-small uk-card-body">
+        <ng-content for="h3"></ng-content>
+        <div class="chart-wrapper">
+          <ngx-charts-gauge
+            *ngIf="data?.length"
+            [scheme]="colorScheme"
+            [results]="data[0].statistics"
+            [min]="0"
+            [max]="data[0].additional.total"
+            [angleSpan]="180"
+            [startAngle]="-90"
+            [bigSegments]="1"
+            [smallSegments]="0">
+          </ngx-charts-gauge>
+        </div>
+    </div>
+</div>

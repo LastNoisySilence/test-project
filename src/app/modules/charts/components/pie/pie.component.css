@@ -1,0 +1,20 @@
+.chart-wrapper {
+  position: relative;
+  min-height: 250px;
+}
+
+ngx-charts-advanced-pie-chart {
+  left: 0;
+  height: inherit;
+  position: absolute;
+}
+
+.total-users {
+  position: absolute;
+  text-align: center;
+  max-height: 50px;
+  top: 40%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
