@@ -8,3 +8,7 @@ ngx-charts-line-chart {
   height: inherit;
   position: absolute;
 }
+
+mwlResizable {
+  box-sizing: border-box;
+}

@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { ChartsComponent } from './charts.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ChartsService } from './charts.service';
-import { HttpModule } from '@angular/http';
 
 import { VerticalBarComponent } from './components/vertical-bar/vertical-bar.component';
 import { PieComponent } from './components/pie/pie.component';
@@ -12,6 +11,8 @@ import { GaugeComponent } from './components/gauge/gauge.component';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { DragulaModule } from 'ng2-dragula';
 import { LineComponent } from './components/line/line.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ShareModule } from '../share/share.module';
 
 
 export const ROUTES: Routes = [
@@ -27,7 +28,8 @@ export const ROUTES: Routes = [
     CommonModule,
     NgxChartsModule,
     DragulaModule,
-    HttpModule,
+    HttpClientModule,
+    ShareModule,
     RouterModule.forChild(ROUTES),
   ],
   providers: [ChartsService],

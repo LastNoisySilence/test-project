@@ -1,7 +1,7 @@
 <div>
   <div class="uk-card uk-card-default uk-card-small uk-card-body">
     <ng-content for="h3"></ng-content>
-    <div class="chart-wrapper">
+    <div class="chart-wrapper" [ngStyle]="wrapperStyle">
       <ngx-charts-line-chart
         *ngIf="data?.length"
         [scheme]="colorScheme"
@@ -14,8 +14,7 @@
         [showYAxisLabel]="showYAxisLabel"
         [xAxisLabel]="xAxisLabel"
         [yAxisLabel]="yAxisLabel"
-        [autoScale]="autoScale"
-        (select)="onSelect($event)">
+        [autoScale]="autoScale">
       </ngx-charts-line-chart>
     </div>
   </div>

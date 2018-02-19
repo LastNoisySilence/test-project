@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { PopulationStatistics } from '../../charts.service';
+import { ResizeEvent } from 'angular-resizable-element';
 
 @Component({
   selector: 'app-line',
@@ -19,8 +20,5 @@ export class LineComponent {
   autoScale = true;
 
   colorScheme = { domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA'] };
-  
-  onSelect(event) {
-    console.log(event);
-  }
+
 }

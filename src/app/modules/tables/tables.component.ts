@@ -8,9 +8,11 @@ import { Observable } from 'rxjs/Rx';
   template: `
     <div class="row">
       <div class="col-xs-12">
-        <app-responsive-table
-          [data]="persons$ | async">
-        </app-responsive-table>
+        <app-resizable-wrapper>
+          <app-responsive-table
+            [data]="persons$ | async">
+          </app-responsive-table>
+        </app-resizable-wrapper>
       </div>
     </div>
   `

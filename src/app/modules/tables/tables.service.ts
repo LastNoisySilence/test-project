@@ -1,9 +1,8 @@
 import { Injectable, Inject } from '@angular/core';
-import { Http } from '@angular/http';
+import { HttpClient } from '@angular/common/http';
 
 import { Observable } from 'rxjs/Rx';
 import 'rxjs/add/operator/map';
-import { count } from '@swimlane/ngx-charts';
 
 export interface Person {
   id: number;
@@ -13,7 +12,7 @@ export interface Person {
   address: {
     state: string,
     city: string
-  }
+  };
 }
 
 
@@ -21,12 +20,12 @@ export interface Person {
 export class TablesService {
 
   constructor(
-    private http: Http,
+    private http: HttpClient,
     @Inject('api') private api: string
   ) { }
 
   get peoples(): Observable<Person[]> {
-    return this.http.get(`${this.api}/peoples`).map(data => data.json());
+    return this.http.get(`${this.api}/peoples`).map((data: Person[]) => data);
   }
 
 }
