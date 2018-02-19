@@ -11,6 +11,7 @@ import { GaugeComponent } from './components/gauge/gauge.component';
 
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { DragulaModule } from 'ng2-dragula';
+import { LineComponent } from './components/line/line.component';
 
 
 export const ROUTES: Routes = [
@@ -30,7 +31,7 @@ export const ROUTES: Routes = [
     RouterModule.forChild(ROUTES),
   ],
   providers: [ChartsService],
-  declarations: [ChartsComponent, VerticalBarComponent, PieComponent, GaugeComponent],
+  declarations: [ChartsComponent, VerticalBarComponent, PieComponent, GaugeComponent, LineComponent],
   exports: [ChartsComponent]
 })
 export class ChartsModule { }

@@ -15,6 +15,11 @@ export interface UserStatistics {
   statistics: ChartData
 }
 
+export interface PopulationStatistics {
+  name: string;
+  series: ChartData[]
+}
+
 export interface ChartData {
   name: string,
   value: number
@@ -39,6 +44,10 @@ export class ChartsService {
 
   get userStatistics(): Observable<UserStatistics[]> {
     return this.http.get(`${this.api}/users`).map(data => data.json());
+  }
+
+  get populationStatistics(): Observable<PopulationStatistics[]> {
+    return this.http.get(`${this.api}/population`).map(data => data.json());
   }
 
 }

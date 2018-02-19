@@ -1,0 +1,10 @@
+.chart-wrapper {
+  position: relative;
+  min-height: 250px;
+}
+
+ngx-charts-line-chart {
+  left: 0;
+  height: inherit;
+  position: absolute;
+}
