@@ -10,7 +10,8 @@ import { ResizeEvent } from 'angular-resizable-element';
 export class LineComponent {
   @Input()
   data: PopulationStatistics[];
-
+  @Input()
+  cardTitle: string;
   showXAxis = true;
   showYAxis = true;
   gradient = false;

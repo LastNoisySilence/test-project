@@ -10,6 +10,8 @@ export class PieComponent {
 
   @Input()
   data: DeviceStatistics[];
+  @Input()
+  cardTitle: string;
   _total = 0;
   colorScheme = { domain: ['#88d8d8', '#A84ED3', '#C66852'] };
   showLegend = false;
@@ -21,5 +23,5 @@ export class PieComponent {
     }
     return this._total;
   }
-  
+
 }

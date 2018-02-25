@@ -1,11 +1,11 @@
 <div
-  [ngStyle]="style"
   mwlResizable
+  appController
+  [ngStyle]="style"
   [resizeEdges]="{bottom: true, right: true, top: true, left: true}"
   [enableGhostResize]="true"
-  [resizeSnapGrid]="{left: 50, right: 50}"
   (resizeEnd)="onResizeEnd($event)">
-  <div #content>
+  <div #content style="height: inherit">
     <ng-content></ng-content>
   </div>
 </div>

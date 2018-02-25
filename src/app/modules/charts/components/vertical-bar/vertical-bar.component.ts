@@ -10,6 +10,8 @@ export class VerticalBarComponent {
 
   @Input()
   data: ChartData[];
+  @Input()
+  cardTitle: string;
   valueSum = 0;
   showXAxis = true;
   showYAxis = true;

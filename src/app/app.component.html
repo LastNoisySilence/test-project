@@ -1,14 +1,7 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-xs-12">
-      <ul uk-tab>
-        <li routerLinkActive="uk-active" *ngFor="let tab of tabs">
-          <a routerLink="{{ tab.path }}">
-            {{ tab.name }}
-          </a>
-        </li>
-      </ul>
+      <router-outlet></router-outlet>
     </div>
   </div>
-  <router-outlet></router-outlet>
 </div>

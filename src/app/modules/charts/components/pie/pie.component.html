@@ -1,6 +1,6 @@
 <div>
   <div class="uk-card uk-card-default uk-card-small uk-card-body">
-    <ng-content select="h3"></ng-content>
+    <h3 class="uk-card-title">{{ cardTitle }}</h3>
     <div class="chart-wrapper">
       <ngx-charts-pie-chart
         *ngIf="data?.length"
@@ -14,7 +14,7 @@
           {{ total }}
         </div>
         <div>
-          <ng-content select="label"></ng-content>
+          <label>Total</label>
         </div>
       </div>
     </div>

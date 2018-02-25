@@ -24,6 +24,17 @@ export interface ChartData {
   value: number;
 }
 
+export interface Person {
+  id: number;
+  name: string;
+  gender: string;
+  age: number;
+  address: {
+    state: string,
+    city: string
+  };
+}
+
 
 @Injectable()
 export class ChartsService {
@@ -47,6 +58,10 @@ export class ChartsService {
 
   get populationStatistics(): Observable<PopulationStatistics[]> {
     return this.http.get(`${this.api}/population`).map((data: PopulationStatistics[]) => data);
+  }
+
+  get peoples(): Observable<Person[]> {
+    return this.http.get(`${this.api}/peoples`).map((data: Person[]) => data);
   }
 
 }

@@ -10,10 +10,6 @@ const routes: Routes = [
   {
     path: 'charts',
     loadChildren: './modules/charts/charts.module#ChartsModule'
-  },
-  {
-    path: 'tables',
-    loadChildren: './modules/tables/tables.module#TablesModule'
   }
 ];
 

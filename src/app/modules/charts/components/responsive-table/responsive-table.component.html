@@ -1,0 +1,18 @@
+<div class="uk-card uk-card-default uk-card-small uk-card-body">
+  <h3 class="uk-card-title">{{ cardTitle }}</h3>
+  <div class="table-wrapper">
+    <ngx-datatable
+      class="material"
+      [rows]="data"
+      columnMode="force"
+      [headerHeight]="50"
+      [footerHeight]="0"
+      [rowHeight]="50"
+      [scrollbarV]="true"
+      [scrollbarH]="true">
+      <ngx-datatable-column name="Name"></ngx-datatable-column>
+      <ngx-datatable-column name="Gender"></ngx-datatable-column>
+      <ngx-datatable-column name="Age"></ngx-datatable-column>
+    </ngx-datatable>
+  </div>
+</div>

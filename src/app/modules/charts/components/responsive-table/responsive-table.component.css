@@ -1,4 +1,5 @@
 @import '~@swimlane/ngx-datatable/release/assets/icons.css';
+@import '~@swimlane/ngx-datatable/release/themes/material.css';
 
 @media screen and (max-width: 800px) {
   .desktop-hidden {
@@ -15,4 +16,22 @@
   .mobile-hidden {
     display: initial;
   }
+}
+
+:host {
+  height: inherit;
+  display: block;
+}
+
+.table-wrapper {
+  position: relative;
+  height: inherit;
+  overflow-y: hidden;
+}
+
+ngx-datatable {
+  left: 0;
+  min-height: 340px;
+  width: 100%;
+  height: 100%;
 }

@@ -9,6 +9,8 @@ import { UserStatistics } from '../../charts.service';
 export class GaugeComponent {
   @Input()
   data: UserStatistics[];
+  @Input()
+  cardTitle: string;
   colorScheme = { domain: ['#88d8d8'] };
   showLegend = false;
   gradient = false;

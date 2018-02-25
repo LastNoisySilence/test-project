@@ -1,6 +1,6 @@
 <div>
     <div class="uk-card uk-card-default uk-card-small uk-card-body">
-        <ng-content for="h3"></ng-content>
+      <h3 class="uk-card-title">{{ cardTitle }}</h3>
         <div class="chart-wrapper">
           <ngx-charts-bar-vertical
             *ngIf="data?.length"
@@ -12,7 +12,7 @@
             [legend]="showLegend"
             [showXAxisLabel]="showXAxisLabel"
             [showYAxisLabel]="showYAxisLabel"
-            [yAxisTickFormatting]="yAxisTickFormatting"> 
+            [yAxisTickFormatting]="yAxisTickFormatting">
           </ngx-charts-bar-vertical>
         </div>
     </div>

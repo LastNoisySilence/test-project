@@ -8,7 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   tabs: { path: string, name: string }[] = [
-    { path: '/charts', name: 'Charts' },
-    { path: '/tables', name: 'Tables' }
+    { path: '/charts', name: 'Charts' }
   ];
 }

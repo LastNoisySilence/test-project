@@ -1,6 +1,6 @@
 <div>
   <div class="uk-card uk-card-default uk-card-small uk-card-body">
-    <ng-content for="h3"></ng-content>
+    <h3 class="uk-card-title">{{ cardTitle }}</h3>
     <div class="chart-wrapper" [ngStyle]="wrapperStyle">
       <ngx-charts-line-chart
         *ngIf="data?.length"
