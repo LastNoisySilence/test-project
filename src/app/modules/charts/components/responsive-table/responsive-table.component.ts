@@ -1,4 +1,4 @@
-import { Component, ViewChild, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import {Person} from '../../charts.service';
 
 @Component({
@@ -10,7 +10,7 @@ export class ResponsiveTableComponent {
 
   @Input()
   data: Person[];
-  @ViewChild('myTable') table: any;
+
   @Input()
   cardTitle: string;
 

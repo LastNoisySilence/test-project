@@ -23,6 +23,8 @@ export class ResizableWrapperComponent {
     if (chartWrapper) {
       chartWrapper.style.minHeight = `${(event.rectangle.height - 93)}px`;
     }
-    window.dispatchEvent(new Event('resize'));
+    setTimeout(() => {
+      window.dispatchEvent(new Event('resize'));
+    }, 100);
   }
 }
