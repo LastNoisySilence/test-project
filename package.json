@@ -24,7 +24,6 @@
     "@swimlane/ngx-charts": "^7.1.0",
     "@swimlane/ngx-datatable": "^11.1.7",
     "angular-resizable-element": "^2.0.0",
-    "angular2-resizable": "^0.4.1",
     "bootstrap-3-grid": "0.0.1",
     "core-js": "^2.4.1",
     "d3": "^4.13.0",
